@@ -1,0 +1,39 @@
+<h1>Listing risk_areas</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>Neighborhood</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Resident</th>
+    <th>Description</th>
+    <th>Phone</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @risk_areas.each do |risk_area| %>
+  <tr>
+    <td><%= risk_area.address %></td>
+    <td><%= risk_area.neighborhood %></td>
+    <td><%= risk_area.city %></td>
+    <td><%= risk_area.state %></td>
+    <td><%= risk_area.resident %></td>
+    <td><%= risk_area.description %></td>
+    <td><%= risk_area.phone %></td>
+    <td><%= risk_area.latitude %></td>
+    <td><%= risk_area.longitude %></td>
+    <td><%= link_to 'Show', risk_area %></td>
+    <td><%= link_to 'Edit', edit_risk_area_path(risk_area) %></td>
+    <td><%= link_to 'Destroy', risk_area, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Risk area', new_risk_area_path %>

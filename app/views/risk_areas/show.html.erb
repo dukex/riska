@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Address:</b>
+  <%= @risk_area.address %>
+</p>
+
+<p>
+  <b>Neighborhood:</b>
+  <%= @risk_area.neighborhood %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @risk_area.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @risk_area.state %>
+</p>
+
+<p>
+  <b>Resident:</b>
+  <%= @risk_area.resident %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @risk_area.description %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @risk_area.phone %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @risk_area.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @risk_area.longitude %>
+</p>
+
+
+<%= link_to 'Edit', edit_risk_area_path(@risk_area) %> |
+<%= link_to 'Back', risk_areas_path %>
