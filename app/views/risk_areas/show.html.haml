@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Address:
+  = @risk_area.address
+%p
+  %b Neighborhood:
+  = @risk_area.neighborhood
+%p
+  %b City:
+  = @risk_area.city
+%p
+  %b State:
+  = @risk_area.state
+%p
+  %b Resident:
+  = @risk_area.resident
+%p
+  %b Description:
+  = @risk_area.description
+%p
+  %b Phone:
+  = @risk_area.phone
+%p
+  %b Latitude:
+  = @risk_area.latitude
+%p
+  %b Longitude:
+  = @risk_area.longitude
+
+= link_to 'Edit', edit_risk_area_path(@risk_area)
+\|
+= link_to 'Back', risk_areas_path
